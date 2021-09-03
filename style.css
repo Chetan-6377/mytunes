@@ -1,0 +1,260 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+html{
+    font-size: 10px;
+}
+#loading_div1{
+ width: 100%;
+ height: 100vh;
+ background-color: black;
+display: grid;
+place-items: center;
+}
+.loading_div2{
+width: 200px;
+height: 200px;
+position: relative;
+/* background-color: white; */
+}
+.rot{
+    width: 200px;
+height: 200px;
+position: absolute;
+    border-right:3px solid white;
+border-radius: 50%;
+animation: rot 3s linear infinite;
+}
+@keyframes rot{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.loading_text{
+color: white;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:url('https://images.pexels.com/photos/290660/pexels-photo-290660.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') no-repeat center/cover;
+    background-size: 100% 100%;
+
+}
+.logo{
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 0.1px 0.1px 0.1px red,0.3px 0.3px 0.3px skyblue , 4px 4px 4px  springgreen;
+}
+.navbar-nav a{
+    display: inline-block;
+    color: white;
+    font-size: 1.6rem;
+    padding: 0.7rem 2rem!important ;
+}
+.navbar-nav a:hover{
+    color: white;
+    font-weight: bold;
+}
+.header-div{
+    width: 100%;
+    height: inherit;
+    position: relative;
+    text-align: center;
+}
+.main-div{
+    width: 100%;
+    height:auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.main-div h1{
+    font-size: 7rem;   
+    margin: 3rem;
+    color: white;
+}
+.main-div h3{
+    color: white;
+    margin: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.main-div p{
+    color: white;
+    margin: 1rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+/* ***************************header end************************ */
+.music_div{
+    width: 100%;
+    height: auto;
+    padding: 5rem 0rem;
+    background: rgb(24, 24, 24);
+}
+.music_div h2{
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+.music_div h3{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 2rem 0rem;
+    word-spacing: 0.3rem;
+    list-style: 1.6rem;
+}
+.music_div p{
+    font-size: 2rem;
+    color: white;
+    word-spacing: 0.2rem;
+    margin: 1.5rem 0rem;
+}
+
+.music_div a button{
+    padding: 1.6rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    background-color: red;
+    color: white;
+    font-weight: 400;
+    border: none;
+}
+.music_div img{
+    width: 100%;
+}
+/* *********************music div end ************************* */
+.movie_div{
+    width: 100%;
+    height: auto;
+    padding: 5rem 0rem;
+    background: white;
+    
+}
+.movie_div h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.6;
+    word-spacing: 0.3rem;
+}
+.movie_div p{
+    margin: 2.5rem 0rem;
+    font-size: 2rem;
+    word-spacing: 0.3rem;
+    font-weight: 400;
+}
+.movie_div a button{
+    padding: 1.6rem;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    background-color: rgb(73, 25, 248);
+    color: white;
+    font-weight: 400;
+    border: none;
+}
+.movie_div img{
+    width: 100%;
+    border-radius: 20px ;
+    margin-bottom: 6rem;
+}
+.movie_deatial{
+    background-color: black;
+    padding: 20rem 0rem;
+}
+.movie_deatial h2{
+    font-size: 4rem;
+    color: white;
+    line-height: 1.6;
+
+}
+.movie_deatial p{
+    font-size: 2rem;
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0rem 3rem;
+}
+/* <!-- ***************************movie div end*********************** --> */
+.gift_cards{
+    width: 100%;
+    height: auto;
+    padding: 5rem 0rem;
+    background-color: white;
+}   
+.cards{
+    display: flex;
+    gap: 1.5rem;
+}
+.gift_img img{
+    width: 100%;
+}
+.gift_text h2{
+    font-size: 3rem;
+}
+.gift_text p{
+    font-size: 2rem;
+}
+/* *********************************gift cards end ************************ */
+.footer_div{
+    background: black;
+    padding: 4rem;
+    width: 100%;
+    height: auto;
+}
+
+.foot_items h3{
+    color: white;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.foot_items hr{
+    color: white;
+}
+.foot_items ul li{
+    color: white;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.copyright{
+    text-align: center;
+    color: white;
+    padding: 1.4rem;
+    font-size: 2rem;
+    background-color: rgb(31, 30, 30);
+}
+
+@media (max-width:992px) {
+        .footer_div{
+            display: none;
+        }
+        .cards{
+            display: inline-block;
+        }
+        .navbar-nav{
+            text-align: center ;
+        }
+       
+}
